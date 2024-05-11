@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-main {
+    @apply btn bg-primary-color-500 lg:hover:bg-primary-color-800 duration-300 text-white-high-emp font-inter font-semibold px-6 py-4 rounded-xl uppercase border-none outline-none;
+  }
+  .btn-main-transparent {
+    @apply btn bg-transparent lg:hover:bg-transparent lg:hover:border-primary-color-900 text-primary-color-300 font-inter font-semibold px-6 py-4 rounded-xl uppercase border-2 border-primary-color-900 outline-none;
+  }
+  .btn-primary-main {
+    @apply btn bg-primary-color-600 lg:hover:bg-primary-color-700 duration-300  text-white font-inter font-semibold md:p-6 py-3 px-8 rounded-xl border-none outline-none;
+  }
+  .btn-secondary-main {
+    @apply btn bg-primary-color-600 lg:hover:bg-primary-color-800 duration-300  text-white font-inter font-semibold py-4 px-6 rounded-xl  border-none outline-none;
+  }
+}
+
+/* Global CSS */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 1s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+  background-color: #0000006c;
+}
